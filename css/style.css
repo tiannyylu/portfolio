@@ -1,0 +1,32 @@
+ul{
+  list-style-type: none;
+}
+
+img{
+    height: auto;
+    width: 250px;
+}
+
+/*
+.social-icons img{
+  height: 20px;
+  width: auto; */
+}
+.social-icons {
+  text-align: center;
+  }
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+
+.social-icons li img {
+  width:auto;
+  height:30px;
+  margin-right: 20px;
+}
