@@ -118,7 +118,7 @@ img{
 
 @keyframes logo_wiggle{
   from{width: 10px;}
-  to{width: 52px;}
+  to{width: 62px;}
 }
 
 #bitmoji{
@@ -293,7 +293,6 @@ img{
 #pto, #paid {
   text-align: center;
 }
-
 
 .travel_gallery {
   display: grid;
