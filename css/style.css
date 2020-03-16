@@ -92,16 +92,10 @@ img{
   width: 250px;
 }
 
-/* .intro{
-  display: grid;
-  grid-template-columns: 100px 400px 100px;
-  grid-template-rows: 30px repeat(5, auto) 100px;
-} */
-
 .intro {
   background-image: url("../img/mission_dolores.png");
-  background-color: rgba(195, 195, 195, 0.4);
-  background-blend-mode: lighten;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: darken;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -114,7 +108,23 @@ img{
 .intro_text{
   font-style: bold;
   padding: 10px 10px 10px 10px;
-  color: #000000;
+  color: #ffffff;
+}
+
+@-webkit-keyframes logo_wiggle{
+  from{width: 10px;}
+  to{width: 52px;}
+}
+
+@keyframes logo_wiggle{
+  from{width: 10px;}
+  to{width: 52px;}
+}
+
+#bitmoji{
+  animation-name: logo_wiggle;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
 }
 
 #bitmoji{
@@ -161,11 +171,7 @@ img{
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card:focus .flip-card-inner {
+.flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner{
   transform: rotateY(180deg);
 }
 
@@ -272,7 +278,7 @@ img{
   height: 280px;
   width: 260px;
   padding: 10px 20px 10px 20px;
-  background: rgba(0, 0, 0, 0.72);
+  background: rgba(0, 0, 0, 0.99);
   color: #fff;
   opacity: 0;
   transition: .3s;
@@ -284,9 +290,10 @@ img{
 
 
 /* PLAY PAGE STYLING */
-#pto, #life_pngs {
+#pto, #paid {
   text-align: center;
 }
+
 
 .travel_gallery {
   display: grid;
@@ -583,4 +590,10 @@ footer>p{
     grid-row: 10/14;
   }
 
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  #logo{
+    animation-iteration-count: 0;
+  }
 }

@@ -1,5 +1,5 @@
 var flip = document.querySelector('.flip-card')
 
-function flipCard() {
-
-}
+function flip() {
+    flip.toggleClass('flipped')
+})
