@@ -1,17 +1,366 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Cabin', Sans-Serif;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+p{
+  font-family: 'Cabin', Sans-Serif;
+  font-size: 16px;
+}
+
+h1{
+  font-family: 'Raleway', Sans-Serif;
+  font-size: 40px;
+  text-align: left;
+}
+
+h2{
+  font-family: 'Raleway', Sans-Serif;
+  font-size: 30px;
+}
+
+#intro_bio{
+  font-size: 18px;
+  text-align: left;
+}
+
+.desktop-br{
+  display: none;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #ffffff;
+}
+
+.nav_links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  list-style: none;
+}
+
+.nav_item a{
+  display: block;
+  color: #6f6f6f;
+  text-decoration: none;
+}
+
+.nav_item a:hover, a:focus{
+  color: #000000;
+  transition: .3s ease;
+}
+
+.current_page a{
+  color: #000000;
+  font-weight: bold;
+  text-decoration: underline;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+}
+
 ul{
   list-style-type: none;
 }
 
-img{
-    height: auto;
-    width: 250px;
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position: absolute;
+  margin-top: -40px;
 }
 
-/*
-.social-icons img{
-  height: 20px;
-  width: auto; */
+.skip a:focus{
+  margin-top: 0px;
 }
+
+img{
+  height: auto;
+  width: 250px;
+}
+
+/* .intro{
+  display: grid;
+  grid-template-columns: 100px 400px 100px;
+  grid-template-rows: 30px repeat(5, auto) 100px;
+} */
+
+.intro {
+  background-image: url("../img/mission_dolores.png");
+  background-color: rgba(195, 195, 195, 0.4);
+  background-blend-mode: lighten;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  grid-column: 1 / -1;
+  grid-row: 2 /span 1;
+}
+
+.intro_text{
+  font-style: bold;
+  padding: 10px 10px 10px 10px;
+  color: #000000;
+}
+
+#bitmoji{
+  height: 70px;
+  width: auto;
+  margin: 10px;
+  margin-left: 50px;
+}
+
+.landing_gallery{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.flip-card {
+  padding: 30px;
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  flex-basis: 300px;
+  /* border: 1px solid #f1f1f1; */
+  /* perspective: 1000px; /* Remove this if you don't want the 3D effect */ */
+}
+
+.flip-card img{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.flip-card p{
+  padding: 10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card:focus .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #202020;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* ABOUT PAGE STYLING*/
+.about_tianny {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: (4, 1fr);
+}
+
+#about_me {
+    text-align: center;
+}
+
+#tianny_pic {
+  grid-column: 2 /span 1;
+  grid-row: 1;
+  height: 550px;
+  width: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.about_tianny p{
+  grid-column: 2 /span 1;
+}
+
+#hey_p{
+  grid-row: 2;
+}
+
+#dance_p{
+  grid-row: 3;
+}
+
+#facts_p{
+  grid-row: 4;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* WORK PAGE STYLING */
+#work_title {
+  text-align: center;
+}
+
+.project_head {
+  font-size: 16px;
+  font-style: bold;
+}
+
+.desc{
+  font-size: 13px;
+}
+
+.project_gallery{
+  display: grid;
+	grid-row-gap: 5px;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+}
+
+.project {
+  position: relative;
+  margin: auto;
+  width: 300px;
+  height:300px;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 280px;
+  width: 260px;
+  padding: 10px 20px 10px 20px;
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  opacity: 0;
+  transition: .3s;
+}
+
+.project:hover .overlay{
+  opacity: 1;
+}
+
+
+/* PLAY PAGE STYLING */
+#pto, #life_pngs {
+  text-align: center;
+}
+
+.travel_gallery {
+  display: grid;
+	grid-row-gap: 5px;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(12,auto);
+	margin: auto;
+}
+
+.travel_gallery img{
+	overflow: hidden;
+  vertical-align: middle;
+  position: relative;
+  width: 100%;
+  height: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+
+.gallery_image:hover img {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+/* CONTACT PAGE STYLING */
+.contact_header h1{
+  text-align: center;
+}
+
+.form{
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 450px;
+  margin: auto;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  align-content: center;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+footer{
+  text-align: center;
+}
+
+footer>p{
+  font-size: 13px;
+}
+
 .social-icons {
   text-align: center;
   }
@@ -21,12 +370,217 @@ img{
   -webkit-user-select:none;
   -moz-user-select:none;
   }
-.social-icons li a {
+.social-icons li a{
   border-bottom: none;
   }
 
-.social-icons li img {
+.social-icons li img{
   width:auto;
-  height:30px;
-  margin-right: 20px;
+  height: 20px;
+  margin-right: 31px;
+}
+
+/* for tablets */
+@media screen and (min-width: 600px) {
+  /* WORK PAGE STYLING */
+  .project_gallery{
+  	grid-template-columns: 1fr 1fr;
+  	grid-template-rows: repeat(2, 1fr);
+  }
+
+  /* PLAY PAGE STYLING */
+  .travel_gallery {
+  	grid-template-columns: repeat(8, 1fr);
+  	grid-template-rows: repeat(8, 15vw);
+    grid-gap: 5px;
+    /* height: 100vh; */
+  }
+
+  .travel_gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #brooklyn {
+    grid-column: 1 /5;
+    grid-row: 1 / 6;
+  }
+
+  #met_light {
+    grid-column: 5 / -1;
+    grid-row: 1 / 3;
+  }
+
+  #statues {
+    grid-column: 5 / -1;
+    grid-row: 3 / 7;
+  }
+
+  #law_lib {
+    grid-column: 1 / 5;
+    grid-row: 6 / 10;
+  }
+
+  #law_quad {
+    grid-column: 5 / -1;
+    grid-row: 7 / 9;
+  }
+
+  #horses {
+    grid-column: 1 / 5;
+    grid-row: 10 / 12;
+    }
+
+  #prince {
+    grid-column: 5 / -1;
+    grid-row: 11 /13;
+  }
+
+  #cooper {
+    grid-column: 5 / -1;
+    grid-row: 9 / 11;
+  }
+
+  #disney {
+    grid-column: 1 / 5;
+    grid-row: 12 / 17;
+  }
+
+  #sf_pink {
+    grid-column: 5/-1;
+    grid-row: 13/15;
+  }
+
+  #sprinkle {
+    grid-column: 5/-1;
+    grid-row: 15/20
+  }
+
+  #moma {
+    grid-column: 1/5;
+    grid-row: 17/20;
+  }
+
+
+}
+
+/* for laptops/desktops */
+@media screen and (min-width: 880px){
+  h1{
+    font-size: 44px;
+  }
+
+  h2{
+    font-size: 35px;
+  }
+
+  .desktop-br {
+    display: block;
+  }
+
+  header{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav_links{
+    align-items: center;
+    justify-content: right;
+    flex-direction: row;
+  }
+
+  .nav_item a{
+    padding: 10px;
+  }
+
+  /* WORK PAGE STYLING */
+  .project_gallery{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  #pj1 {
+    grid-column: 1/2;
+  }
+
+  #pj2 {
+    grid-column: 2/3;
+  }
+
+  #pj3 {
+    grid-column: 3/4;
+  }
+
+  #pj4 {
+    grid-column: 4/-1;
+  }
+
+  /* PLAY PAGE STYLING */
+  .travel_gallery {
+  	grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 15vw);
+    grid-gap: 8px;
+  }
+
+  #brooklyn {
+    grid-column: 1/5;
+    grid-row: 1/4;
+  }
+
+  #met_light {
+    grid-column: 5/9;
+    grid-row: 1/3;
+  }
+
+  #statues {
+    grid-column: 9/-1;
+    grid-row: 1/4;
+  }
+
+  #law_lib {
+    grid-column: 5/9;
+    grid-row: 3/6;
+  }
+
+  #law_quad {
+    grid-column: 1/5;
+    grid-row: 4/6;
+  }
+
+  #cooper {
+    grid-column: 9/-1;
+    grid-row: 4/6;
+  }
+
+  #horses{
+    grid-column: 8/-1;
+    grid-row: 6/8;
+  }
+
+  #sprinkle {
+    grid-column: 1/8;
+    grid-row: 6/10;
+  }
+
+  #sf_pink {
+    grid-column: 8/-1;
+    grid-row: 8/10;
+  }
+
+  #prince {
+    grid-column: 1/8;
+    grid-row: 10/12;
+  }
+
+  #moma{
+    grid-column: 1/8;
+    grid-row: 12/14;
+  }
+
+  #disney {
+    grid-column: 8/-1;
+    grid-row: 10/14;
+  }
+
 }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/icon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Raleway:300,400" rel="stylesheet">
+  </head>
+
+  <body>
+    <main>
+      <div class="skip"><a href="#intro_name">Skip to Main Content</a></div>
+      <header>
+        <a href="index.html"><img id = "bitmoji" src="img/icon.png" alt="bitmoji"></a>
+        <nav>
+          <ul class="nav_links">
+            <li class="nav_item"><a href="index.html">Home</a></li>
+            <li class="nav_item" id = "about"><a href="about.html">About</a></li>
+            <li class="nav_item" id = "work"><a href="work.html">Work</a></li>
+            <li class="nav_item" id="resume"><a href="https://drive.google.com/file/d/1dbhQKPHHGqH136UFvtDNJJ9MSZZCczQR/view?usp=sharing" target="_blank">Resume</a></li>
+            <li class="nav_item" id = "play"><a href="play.html">Play</a></li>
+            <li class="nav_item current_page" id = "contact"><a href="form.html">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <div class="contact_content">
+    <div class="contact_header">
+      <h1>Say Hey, Hi, Hello!</h1>
+    </div>
+
+    <div class="form">
+      <form
+        action="https://formspree.io/xrgqrbaz"
+        method="POST"
+      >
+      <label>
+        Name:
+        <input type="text" id="name" name="name" placeholder="Your name.." required="required" data-error="Firstname is required.">
+      </label>
+
+        <label>
+          Email:
+          <input type="text" id="email" name="_replyto" placeholder="example@me.com" required="required" data-error="Valid email is required.">
+        </label>
+        <label>
+          Message:
+          <textarea id="message" name="message" placeholder="Write something.."></textarea>
+        </label>
+
+        <button type="submit">Send</button>
+       </form>
+      </div>
+      </div>
+    </main>
+    <footer>
+      <p>Find me on some socials.</p>
+      <ul class="social-icons">
+          <li><a href="https://www.linkedin.com/in/tianny-lu/"><img src='img/linkedin.png' /></a></li>
+          <li><a href="https://github.com/tiannyylu"><img src='img/github.png' /></a></li>
+          <li><a href="mailto:tiannyylu@gmail.com"><img src='img/envelope.png' /></a></li>
+      </ul>
+      <p>University of Michigan School of Information - Tianny Lu</p>
+    </footer>
+  </body>
+</html>

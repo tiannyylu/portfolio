@@ -4,51 +4,85 @@
     <meta charset="utf-8">
     <title>Tianny Lu Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- <script src = "js/portfolio.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Raleway:300,400" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="img/icon.png"/>
   </head>
   <body>
-    <!-- <a class = "skip" href="#skip">Skip to Main Content</a> -->
+  <main>
+    <div class="skip"><a href="#intro_name">Skip to Main Content</a></div>
     <header>
-      <!-- <img src="images/logo.png" alt="logo" id = "logo"> -->
+      <a href="index.html"><img id = "bitmoji" src="img/icon.png" alt="bitmoji"></a>
       <nav>
         <ul class="nav_links">
-          <li class="nav_item"><a href="index.html">Home</a></li>
-          <li class="nav_item"><a href="about.html">About</a></li>
-          <li class="nav_item"><a href="work.html">Work</a></li>
+          <li class="nav_item current_page"><a href="index.html">Home</a></li>
+          <li class="nav_item" id = "about"><a href="about.html">About</a></li>
+          <li class="nav_item" id = "work"><a href="work.html">Work</a></li>
           <li class="nav_item" id="resume"><a href="https://drive.google.com/file/d/1dbhQKPHHGqH136UFvtDNJJ9MSZZCczQR/view?usp=sharing" target="_blank">Resume</a></li>
-          <li class="nav_item"><a href="travels.html">Play</a></li>
+          <li class="nav_item" id = "play"><a href="play.html">Play</a></li>
+          <li class="nav_item" id = "contact"><a href="form.html">Contact</a></li>
         </ul>
     </nav>
   </header>
-  <main>
-    <div class="intro">
-      <h1 id="intro_name">Hi, I'm Tianny! I'm originally from the San Francisco Bay Area but currently learning in Ann Arbor, Michigan.</h1>
+  <div class="intro">
+    <div class="intro_text">
+      <h1 id="intro_name">Hi, I'm Tianny! I'm originally from the Bay Area <br class="desktop-br"> but currently learning in Ann Arbor, Michigan.</h1>
 
-      <p id="intro_bio"> I'm an aspiring product analyst who is curious about the interactions between product, people, and data. I'm passionate about creating accessible and equitable technology to help bridge the gap between users and their goals.</p>
+      <p id="intro_bio"> I'm an aspiring product analyst who is curious about the interactions between product, people, and data. <br class="desktop-br"> I aim to create accessible and equitable technology to help bridge that gap between users and their goals.</p>
     </div>
+  </div>
 
-    <h2 class="projects">Latest Projects</h2>
-    <div class="gallery">
+    <div id = "latest_projects">
+      <h2 class="projects">Latest Projects</h2>
 
-      <div class="project1">
-        <img id="image1" src="img/placeholder.png" alt="placeholder" />
-        <p id="project1_bio">This will contain a brief description of the project.</p>
-        <a href="#project1">Learn More</a>
+      <div class="landing_gallery">
+      <div class="flip-card" id="postmates">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class = "project_image" id="image1" src="img/postmates.png" alt="postmates" />
+          </div>
+          <div class="flip-card-back">
+            <h3>Postmates - Exploratory Product Analysis</h3>
+            <p>Conducted exploratory analysis to help determine business levers Growth, Marketing, Product, and Engineering could leverage to facilitate growth and increase market share.</p>
+          </div>
+        </div>
       </div>
 
-      <div class="project2">
-        <img id="image2" src="img/placeholder.png" alt="placeholder" />
-        <p id="project2_bio">This will contain a brief description of the project.</p>
-        <a href="#project2">Learn More</a>
+      <div class="flip-card" id = "d3">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class = "project_image" id="image2" src="img/state_of_detroit.png" alt="dataDrivenDetroit" />
+          </div>
+          <div class="flip-card-back">
+            <h3>Data Driven Detroit - Redesign of Training Module</h3>
+            <p>Collaborated with a group of Data Science Consultants, User Experience Consultants, and User Researchers to redesign and create a user-friendly training module for an online data analysis tool, State of the Detroit Child.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card" id = "oem">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img class = "project_image" id="image3" src="img/michigan.png" alt="UofM Logo" />
+          </div>
+          <div class="flip-card-back">
+            <h3>University of Michigan - Creating a Hollistic College Application</h3>
+            <p>Working with the University of Michigan's Office of Enrollment Management as a client, my team and I created a supplemental database that provided valuable information on school districts and counties. The goal was to help Michigan move towards a more hollistic recruiting approach and understand the whole makeup of potential students.</p>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
+
   </main>
   <footer>
+    <p>Find me on some socials.</p>
     <ul class="social-icons">
-        <li><a href="https://www.linkedin.com/in/tianny-lu/"><img src='img/linkedin.png' /></a></li>
-        <li><a href="https://github.com/tiannyylu"><img src='img/github.png' /></a></li>
-        <li><a href="mailto:tiannyylu@gmail.com"><img src='img/envelope.png' /></a></li>
+        <li><a href="https://www.linkedin.com/in/tianny-lu/"><img src='img/linkedin.png' alt='linkedin'/></a></li>
+        <li><a href="https://github.com/tiannyylu"><img src='img/github.png' alt='github'/></a></li>
+        <li><a href="mailto:tiannyylu@gmail.com"><img src='img/envelope.png' alt='email'/></a></li>
     </ul>
+    <p>University of Michigan School of Information - Tianny Lu</p>
   </footer>
   </body>
 </html>

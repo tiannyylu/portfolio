@@ -2,51 +2,78 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Projects</title>
+    <title>Work</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/icon.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Raleway:300,400" rel="stylesheet">
   </head>
   <body>
+    <main>
+    <div class="skip"><a href="#work">Skip to Main Content</a></div>
     <header>
+      <a href="index.html"><img id = "bitmoji" src="img/icon.png" alt="bitmoji"></a>
       <nav>
         <ul class="nav_links">
           <li class="nav_item"><a href="index.html">Home</a></li>
-          <li class="nav_item"><a href="about.html">About</a></li>
-          <li class="nav_item"><a href="work.html">Work</a></li>
+          <li class="nav_item" id = "about"><a href="about.html">About</a></li>
+          <li class="nav_item current_page" id = "work"><a href="work.html">Work</a></li>
           <li class="nav_item" id="resume"><a href="https://drive.google.com/file/d/1dbhQKPHHGqH136UFvtDNJJ9MSZZCczQR/view?usp=sharing" target="_blank">Resume</a></li>
-          <li class="nav_item"><a href="travels.html">Play</a></li>
+          <li class="nav_item" id = "play"><a href="play.html">Play</a></li>
+          <li class="nav_item" id = "contact"><a href="form.html">Contact</a></li>
         </ul>
-        </nav>
-    </header>
+    </nav>
+  </header>
 
-    <main>
-      <h1 id = "work">Work</h1>
-      <div class="gallery">
+      <div id="work">
+      <h1 id = "work_title">Work</h1>
 
-        <div class="project1">
-          <img id="image1" src="img/placeholder.png" alt="placeholder" />
-          <p id="project1_bio">This will contain a brief description of the project.</p>
-          <a href="#project1">Learn More</a>
+      <div class="project_gallery">
+        <div class="project" id = "pj1">
+          <img id="image1" src="img/postmates.png" alt="Postamtes"/>
+          <div class="overlay">
+            <h2 class = "project_head">Postmates - Exploratory Product Analysis</h2>
+            <p class = "desc" id="project1_bio">At Postmates, I was responsible for conducting exploratory analysis to help determine business levers Growth, Marketing, Product, and Engineering could leverage to facilitate growth and increase market share. One of the main projects I worked on was utilizing the Yelp API in order to analysis inventory gaps for restaurant onboarding.</p>
+          </div>
+          <!-- <a href="#project1">Learn More</a> -->
         </div>
 
-        <div class="project2">
-          <img id="image2" src="img/placeholder.png" alt="placeholder" />
-          <p id="project2_bio">This will contain a brief description of the project.</p>
-          <a href="#project2">Learn More</a>
+        <div class="project" id = "pj2">
+          <img id="image2" src="img/state_of_detroit.png" alt="dataDrivenDetroit" />
+          <div class="overlay">
+            <h2 class = "project_head">Data Driven Detroit - Redesign of Training Module</h2>
+            <p class = "desc" id="project2_bio">With infoLab at the University of Michigan's School of Information, I collaborated with a team of Data Science Consultants, User Experience Consultants, and User Researchers to redesign and create a user-friendly training module for an online data analysis tool, State of the Detroit Child. One of our goals was to take the original training module which was a single scroll page and make it more dynamic and interactive with the users.</p>
+          </div>
+          <!-- <a href="#project2">Learn More</a> -->
         </div>
 
-        <div class="project3">
-          <img id="image3" src="img/placeholder.png" alt="placeholder" />
-          <p id="project3_bio">This will contain a brief description of the project.</p>
-          <a href="#project3">Learn More</a>
+        <div class="project" id = "pj3">
+          <img id="image3" src="img/michigan.png" alt="UofM Logo" />
+          <div class="overlay">
+            <h2 class = "project_head">University of Michigan - Creating a Hollistic College Application</h2>
+            <p class = "desc" id="project3_bio">Working with the University of Michigan's Office of Enrollment Management as a client, my team and I created a supplemental database that provided valuable information on school districts and counties. The goal was to help Michigan move towards a more hollistic recruiting approach and understand the whole makeup of potential students. As of right now, we are currently developing the databases.</p>
+          </div>
+          <!-- <a href="#project3">Learn More</a> -->
         </div>
 
-        <div class="project4">
-          <img id="image4" src="img/lily_poster.png" alt="lily_poster" />
-          <p id="project4_bio">This will contain a brief description of the project.</p>
-          <a href="#project4">Learn More</a>
+        <div class="project" id = "pj4">
+          <img id="image4" src="img/mango.png" alt="Infographic Project"/>
+          <div class="overlay">
+            <h2 class = "project_head">University of Michigan - Informational Graphic Design</h2>
+            <p class = "desc" id="project4_bio">During my time at the School of Information, I was able to take a graphic design course that focused on conveying information in impactful and meaningful ways. We were able to utilize Adobe Creative Cloud Applications (e.g. Photoshop, Illustrator, etc.) to create user personas, high fidelity wireframes, infographics, and logos.</p>
+          </div>
+          <!-- <a href="#project4">Learn More</a> -->
         </div>
       </div>
+      </div>
     </main>
+    <footer>
+      <p>Find me on some socials.</p>
+      <ul class="social-icons">
+        <li><a href="https://www.linkedin.com/in/tianny-lu/"><img src='img/linkedin.png' alt='linkedin'/></a></li>
+        <li><a href="https://github.com/tiannyylu"><img src='img/github.png' alt='github'/></a></li>
+        <li><a href="mailto:tiannyylu@gmail.com"><img src='img/envelope.png' alt='email'/></a></li>
+      </ul>
+      <p>University of Michigan School of Information - Tianny Lu</p>
+    </footer>
   </body>
 </html>
